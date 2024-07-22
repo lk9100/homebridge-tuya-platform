@@ -156,17 +156,20 @@ export default class AirConditionerAccessory extends BaseAccessory {
     service.getCharacteristic(this.Characteristic.Active)
       .onGet(() => {
         const activeStatus = this.getStatus(activeSchema.code)!;
-        const modeStatus = this.getStatus(modeSchema.code)!;
-        return (activeStatus.value === true && modeStatus.value === FAN_MODE) ? ACTIVE : INACTIVE;
+        return activeStatus.value === true ? ACTIVE : INACTIVE;
       })
       .onSet(async value => {
-        await this.sendCommands([{
-          code: activeSchema.code,
-          value: (value === ACTIVE) ? true : false,
-        }, {
-          code: modeSchema.code,
-          value: FAN_MODE,
-        }], true);
+        const modeStatus = this.getStatus(modeSchema.code)!;
+        await this.sendCommands([
+          {
+            code: activeSchema.code,
+            value: value === ACTIVE,
+          },
+          {
+            code: modeSchema.code,
+            value: modeStatus.value !== FAN_MODE ? modeStatus.value : FAN_MODE,
+          },
+        ], true);
       });
 
     // Optional Characteristics
