@@ -30,6 +30,7 @@
 - Add inching button for switches.
 - Add support to 2ch windows covering. (#339) Thanks @CryptoIR for the contribution
 - Add retry when network error happened.
+- Add Pet Feeder support (`cwwsq`). (#483) Thanks @aselekoglu for the contribution
 
 
 ### Fixed

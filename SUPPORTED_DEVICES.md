@@ -77,7 +77,7 @@ Most category code is pinyin abbreviation of Chinese name.
 | Pet Treat Feeder | 宠物弹射喂食器 | cwtswsq | | | [Documentation](https://developer.tuya.com/en/docs/iot/categorycwtswsq?id=Kaiuz24lq3fq5) |
 | Pet Ball Thrower | 宠物网球发射器 | cwwqfsq | | | [Documentation](https://developer.tuya.com/en/docs/iot/categorycwwqfsq?id=Kaiuz26r7g1up) |
 | HVAC | 暖通器 | ntq | | | [Documentation](https://developer.tuya.com/en/docs/iot/categoryntq?id=Kaiuz292sjqcz) |
-| Pet Feeder | 宠物喂食器 | cwwsq | | | [Documentation](https://developer.tuya.com/en/docs/iot/categorycwwsq?id=Kaiuz2b6vydld) |
+| Pet Feeder | 宠物喂食器 | cwwsq | Switch | ✅ | [Documentation](https://developer.tuya.com/en/docs/iot/categorycwwsq?id=Kaiuz2b6vydld) |
 | Pet Fountain | 宠物饮水机 | cwysj | | | [Documentation](https://developer.tuya.com/en/docs/iot/categorycwysj?id=Kaiuz2dfro0nd) |
 | Sofa | 沙发 | sf | | | [Documentation](https://developer.tuya.com/en/docs/iot/categorysf?id=Kaiuz2fp9uqtt) |
 | Electric Fireplace | 电壁炉 | dbl | | | [Documentation](https://developer.tuya.com/en/docs/iot/electric-fireplace?id=Kaiuz2hz4iyp6) |
